@@ -1,1 +1,1 @@
-Print the type of file
+Create a symbolic link
