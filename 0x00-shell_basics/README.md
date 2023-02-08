@@ -1,1 +1,1 @@
-move betty file
+first derectory deletion
