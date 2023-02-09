@@ -1,1 +1,1 @@
-Execute permissions to the group, owner and user
+set permissions to file
