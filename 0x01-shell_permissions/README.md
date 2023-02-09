@@ -1,1 +1,1 @@
-set premissions the same as olleh
+add execute permissions to all sub directories
