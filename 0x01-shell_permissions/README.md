@@ -1,1 +1,1 @@
-add execute permissions to all sub directories
+creating my_dir
