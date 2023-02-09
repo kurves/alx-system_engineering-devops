@@ -1,1 +1,1 @@
-aet the mode of the file
+set premissions the same as olleh
