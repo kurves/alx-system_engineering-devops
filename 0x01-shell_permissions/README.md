@@ -1,1 +1,1 @@
-Change file ownership 
+Add symbolic link permission
