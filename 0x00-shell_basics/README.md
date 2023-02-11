@@ -1,1 +1,1 @@
-Clean files ending with ~
+creating multiple directories
