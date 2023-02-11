@@ -1,1 +1,1 @@
-moving files starting with capital letters
+Clean files ending with ~
