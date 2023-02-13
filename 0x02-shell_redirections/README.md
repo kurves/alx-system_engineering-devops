@@ -1,2 +1,1 @@
-printing hello world
-printing a confused smiley
+Displaying file contents
