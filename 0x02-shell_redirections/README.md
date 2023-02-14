@@ -1,1 +1,1 @@
-display a unique pattern
+hide a word
