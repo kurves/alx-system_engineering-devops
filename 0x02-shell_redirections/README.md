@@ -1,1 +1,1 @@
-Printing uniques word
+finding that word
