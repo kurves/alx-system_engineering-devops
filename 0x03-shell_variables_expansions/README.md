@@ -1,1 +1,1 @@
-add action to path
+counting the number of directories
