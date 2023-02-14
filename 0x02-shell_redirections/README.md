@@ -1,1 +1,1 @@
-Printing contents of two files
+printing the third line
