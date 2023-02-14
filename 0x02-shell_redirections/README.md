@@ -1,1 +1,1 @@
-counting that word
+display a unique pattern
