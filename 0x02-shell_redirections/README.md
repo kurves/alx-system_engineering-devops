@@ -1,1 +1,1 @@
-hide a word
+Display contents
