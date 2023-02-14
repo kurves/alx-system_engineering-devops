@@ -1,1 +1,1 @@
-Deleting files with .js extension
+Counting directories
