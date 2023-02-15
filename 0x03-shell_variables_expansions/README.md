@@ -1,1 +1,1 @@
-divide and rule
+binary to decimal
