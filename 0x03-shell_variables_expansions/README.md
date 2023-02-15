@@ -1,1 +1,1 @@
-create globale variable
+adding values
