@@ -1,1 +1,1 @@
-removing characters
+reverse output
