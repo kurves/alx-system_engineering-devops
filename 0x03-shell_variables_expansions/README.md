@@ -1,1 +1,1 @@
-binary to decimal
+perform combinations
