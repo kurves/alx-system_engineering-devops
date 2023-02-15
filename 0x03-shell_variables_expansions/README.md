@@ -1,1 +1,1 @@
-decimal to hexadecimal
+print odd values
