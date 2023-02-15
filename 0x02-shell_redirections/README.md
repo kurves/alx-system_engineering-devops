@@ -1,1 +1,1 @@
-reverse output
+print and sort users
