@@ -1,1 +1,1 @@
-print local variables
+create local variabl;e
