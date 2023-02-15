@@ -1,1 +1,1 @@
-perform combinations
+print number with decimals
