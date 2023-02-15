@@ -1,1 +1,1 @@
-adding values
+divide and rule
