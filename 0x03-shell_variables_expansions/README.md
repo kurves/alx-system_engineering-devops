@@ -1,1 +1,1 @@
-counting the number of directories
+printing variables
