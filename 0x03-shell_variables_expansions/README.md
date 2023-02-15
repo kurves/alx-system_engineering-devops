@@ -1,1 +1,1 @@
-print odd values
+adding variuables
