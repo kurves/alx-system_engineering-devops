@@ -1,1 +1,1 @@
-Display contents
+removing characters
