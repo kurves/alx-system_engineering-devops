@@ -1,1 +1,1 @@
-printing variables
+print local variables
