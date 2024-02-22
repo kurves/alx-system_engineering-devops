@@ -2,14 +2,13 @@
 #scriopt that prints text
 
 hours=0
-minutes=1
-while [ $hours -le 10 ];
+while [ $hours -le 12 ];
 do
+    minutes=1
     while [ $minutes -le 59 ];
     do
 	printf "%02d\n" $hours $minutes
         ((minutes++))
     done
     ((hours++))
-    minutes=0
 done
