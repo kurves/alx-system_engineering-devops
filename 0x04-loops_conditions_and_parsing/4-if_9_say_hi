@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #scriopt that prints text
 
-count=0
+count=1
 while [ $count -le 10 ];
 do
     if [ $count -eq 9 ];
