@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 #scriopt that kills process
 
-sigterm_handler() {
-    echo "I am invincible!!!"
-    exit 0
-}
 
-trap 'sigterm_handler' SIGTERM
 
-while true; do
-    echo "To infinity and beyond"
-    sleep 2
+trap 'echo "Received SIGTERM signal. Press Ctrl+C to exit gracefully." && exit 0' SIGTERM
+while true;
+do
+  echo "To infinity and beyond"
+  sleep 2
 done
+
