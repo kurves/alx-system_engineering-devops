@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#scriopt that kills process
+
+pkill 7-highlander
