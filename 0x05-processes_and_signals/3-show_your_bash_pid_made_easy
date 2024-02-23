@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#scriopt that prints its own pid
+
+pgrep -l bash
