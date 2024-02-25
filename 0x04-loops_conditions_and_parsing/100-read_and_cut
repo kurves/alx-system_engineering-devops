@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#scriopt that prints details of file
+
+while IFS=':' read -r username _ userid _ homedir _
+do
+    echo "$username"
+    echo "$userid"
+    echo "$homedir"
+done </etc/passwd
