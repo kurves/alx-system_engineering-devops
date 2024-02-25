@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#scriopt that prints details of file
+
+
+while IFS=':' read -r username _ userid groupid _ homedir shell
+do
+    password=$(openssl rand -base64 12)
+
+    commands=("fly" "swim" "run" "drive" "teleport")
+    command=${commands[$RANDOM % ${#commands[@]}]}
+
+    echo "The user $username is part of the $groupid gang, lives in $homedir, and rides $command/$shell."
+    echo "User ID's place is protected by the passcode $password, more info about the user here: USER ID INFO"
+done </etc/passwd
