@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+#scriopt that kills process
+
+start_process() {
+    echo "I am alive!" > /tmp/my_process
+    while true; do
+        sleep 2
+        echo "I am alive!" > /tmp/my_process
+    done
+}
+
+stop_process() {
+    pkill -f "I am alive!"
+}
+
+restart_process() {
+    stop_process
+    start_process
+}
+
+case "$1" in
+    start)
+        start_process &
+        echo "$!" > /var/run/my_process.pid
+        echo "manage_my_process started"
+        ;;
+    stop)
+        stop_process
+        rm -f /var/run/my_process.pid
+        echo "manage_my_process stopped"
+        ;;
+    restart)
+        restart_process &
+        echo "$!" > /var/run/my_process.pid
+        echo "manage_my_process restarted"
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+        ;;
+esac
