@@ -2,28 +2,27 @@
 #scriopt that kills process
 
 
-sigterm_handler() {
-    echo "I hate the kill command"
-}
 
+sigquit_handler() {
+    rm -f "/var/run/myscript.pid"
+    exit 0
+}
 sigint_handler() {
     echo "Y U no love me?!"
 }
 
-sigquit_handler() {
-    echo "Deleting PID file and terminating script"
-    rm -f /var/run/myscript.pid
-    exit 0
+sigterm_handler() {
+    echo "I hate the kill command"
 }
-
 trap sigterm_handler SIGTERM
 trap sigint_handler SIGINT
 trap sigquit_handler SIGQUIT
 
+
 echo "$$" > /var/run/myscript.pid
 
-echo "To infinity and beyond indefinitely"
 while true;
 do
-    sleep 1
+  echo "To infinity and beyond!"
+  sleep 2
 done
