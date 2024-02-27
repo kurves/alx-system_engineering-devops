@@ -3,9 +3,9 @@
 def match_string(str)
   regex = /hb(t{1,})n/
   if regex.match(str)
-    puts "String '#{str}' matches the pattern"
+    puts str
   else
-    puts "String '#{str}' does not match the pattern"
+    puts 
   end
 end
 
