@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def match_string(str)
-  regex = /hbt{2,5}n/
+  regex = /hb(t{1,})n/
   if regex.match(str)
     puts "String '#{str}' matches the pattern"
   else
