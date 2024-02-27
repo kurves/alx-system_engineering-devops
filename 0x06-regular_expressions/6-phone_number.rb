@@ -4,6 +4,9 @@ def match_phone_number(str)
   regex = /^\d{10}$/
   if regex.match(str)
     puts str
+  else
+    puts
+  end
 end
 
 if ARGV.length != 1
