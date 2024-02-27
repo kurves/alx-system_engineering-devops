@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def match_string(str)
-  regex = /^h.n$/
+  regex = /^h(.)n$/
   if regex.match(str)
     puts "$"
   else
