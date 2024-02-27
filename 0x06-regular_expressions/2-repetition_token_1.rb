@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def match_string(str)
-  regex = /hb+t?n/
+  regex = /hb{0,2}tn/
   if regex.match(str)
     puts str
   else
