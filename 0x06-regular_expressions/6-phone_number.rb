@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def match_phone_number(str)
-  regex = /^\d{10}$/
+  regex = /^\d{3}([\s-]?\d{3}){2}$/
   if regex.match(str)
     puts "String '#{str}' matches the pattern"
   else
