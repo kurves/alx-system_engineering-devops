@@ -3,9 +3,9 @@
 def match_string(str)
   regex = /^h(.)n$/
   if regex.match(str)
-    puts "$"
+    puts str
   else
-    puts "String '#{str}' does not match the pattern"
+    puts 
   end
 end
 
