@@ -1,10 +1,18 @@
 #!/usr/bin/env ruby
 
-def repetition_token(argument)
-  matched_string = argument.match(/hbt*n/)
-  puts matched_string
+def match_string(str)
+  regex = /hbt+n/
+  if regex.match(str)
+    puts str
+  else
+    puts 
+  end
 end
 
-argument = ARGV[0]
+if ARGV.length != 1
+  puts "Usage: ruby script.rb <string>"
+  exit 1
+end
 
-repetition_token(argument)
+string = ARGV[0]
+match_string(string)
