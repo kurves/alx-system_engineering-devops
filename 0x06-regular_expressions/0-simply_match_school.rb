@@ -1,10 +1,17 @@
 #!/usr/bin/env ruby
 
-def match_school(argument)
-  matched_string = argument.match(/School/)
-  puts matched_string
+
+def match_school(str)
+  regex = /School/
+  if regex.match(str)
+    puts str
+  end
 end
 
-argument = ARGV[0]
+if ARGV.length != 1
+  puts "Usage: ruby script.rb <string>"
+  exit 1
+end
 
-match_school(argument)
+string = ARGV[0]
+match_school(string)
