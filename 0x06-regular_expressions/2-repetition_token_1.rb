@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
 def match_string(str)
-  regex = /hb[^t]*tn/
+  regex = /hb+t?n/
   if regex.match(str)
-    puts str}
+    puts str
   else
     puts 
   end
