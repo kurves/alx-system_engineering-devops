@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def extract_message_info(message)
-  match_data = input.match(/\[from:([^\]]+)\] \[to:([^\]]+)\] \[flags:([^\]]+)\]/)
+  match_data = message.match(/\[from:([^\]]+)\] \[to:([^\]]+)\] \[flags:([^\]]+)\]/)
   sender = match_data[1]
   receiver = match_data[2]
   flags = match_data[3]
