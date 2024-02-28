@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#script that prints process and port
 
 netstat -tuln | grep 'LISTEN' | awk '{print $4,$7}' | awk -F'/' '{print $1,$NF}' | sort -u | while read -r port pid; do
     # Get program name from PID
