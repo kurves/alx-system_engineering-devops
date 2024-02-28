@@ -1,22 +1,13 @@
 #!/usr/bin/env ruby
 
 def extract_message_info(message)
-  regex = /(?<sender>[\w\s]+),(?<receiver>[\w\s]+),(?<flags>[A-Z]+)/
-  match_data = message.match(regex)
-  
-  if match_data
-    sender = match_data[:sender].strip
-    receiver = match_data[:receiver].strip
-    flags = match_data[:flags]
-    
-    puts "Sender: #{sender}"
-    puts "Receiver: #{receiver}"
-    puts "Flags: #{flags}"
-  else
-    puts "Invalid message format."
-  end
-end
+  match_data = input.match(/\[from:([^\]]+)\] \[to:([^\]]+)\] \[flags:([^\]]+)\]/)
+  sender = match_data[1]
+  receiver = match_data[2]
+  flags = match_data[3]
 
+  puts "#{sender},#{receiver},#{flags}"
+end
 if ARGV.length != 1
   puts "Usage: ruby script.rb <message>"
   exit 1
