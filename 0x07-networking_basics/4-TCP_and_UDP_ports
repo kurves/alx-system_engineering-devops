@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+netstat -tuln | grep 'LISTEN' | awk '{print $4,$7}' | awk -F'/' '{print $1,$NF}' | sort -u | while read -r port pid; do
+    # Get program name from PID
+    program=$(ps -p "$pid" -o comm=)
+    echo "Port: $port, PID: $pid, Program: $program"
+done
