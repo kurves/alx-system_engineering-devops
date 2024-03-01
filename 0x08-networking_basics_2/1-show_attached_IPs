@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#script thast displays ipv4 iddresses
+
+ipv4_addresses=$(ifconfig | grep -oP 'inet\s+\K[\d.]+')
+
+echo "Active IPv4 Addresses:"
+echo "$ipv4_addresses"
