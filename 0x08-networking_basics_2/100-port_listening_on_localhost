@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#script listens on local host
+
+if ! command -v nc &> /dev/null;
+then
+    echo "Error: netcat (nc) is not installed. Please install it and rerun this script."
+    exit 1
+fi
+
+nc -l localhost 98
