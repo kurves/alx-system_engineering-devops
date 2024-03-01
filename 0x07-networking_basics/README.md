@@ -1,2 +1,6 @@
 ## 0x07. Networking basics #0
 ### What is OSI model?
+### MAC AND IP ADDRESSES
+### UDP AND TCP PRPOTOCOLS
+### TCP AND UDP PORTS
+### SCRIPT THAT PINGS AN ADDRESS
